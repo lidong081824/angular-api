@@ -3,14 +3,15 @@ import { CommonModule } from '@angular/common';
 
 import { FatherRoutingModule } from './father-routing.module';
 import { IndexComponent } from './index/index.component';
-import { Index1Component } from './index1/index1.component';
+import { TestDirective } from 'app/core/directive/test.directive';
 
 
 @NgModule({
-  declarations: [IndexComponent, Index1Component],
+  declarations: [IndexComponent, TestDirective],
   imports: [
     CommonModule,
-    FatherRoutingModule
-  ]
+    FatherRoutingModule,
+  ],
+  providers: [TestDirective]
 })
 export class FatherModule { }
