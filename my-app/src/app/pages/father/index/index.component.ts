@@ -19,7 +19,7 @@ export class IndexComponent implements OnInit {
   }
 
   add() {
-    this.list.push({ name: '小明' });
+    this.list.push({ name: '小明', age: 18 });
   }
 
 }

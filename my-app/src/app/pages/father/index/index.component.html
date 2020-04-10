@@ -1,15 +1,13 @@
 <button (click)="add()">新增</button>
-<div [appTest]="test">
+<div [appTest]="test" style="width: 500px;margin: 0 auto;">
+  <table>
+    <tr *ngFor="let item of list">
+      <td style="border: 1px solid black;">{{item.name}}</td>
+      <td style="border: 1px solid black;">{{item.age}}</td>
+    </tr>
+  </table>
   <ng-template #test>
     <div *ngIf="!list || list.length<=0">为空</div>
-    <div *ngIf="list && list.length>0">
-      <p *ngFor="let item of list">{{item.name}}</p>
-    </div>
-  </ng-template>
-</div>
-
-<div [appTest]="test2">
-  <ng-template #test2>
-    <div>34</div>
+    <div *ngIf="list && list.length>0">{{list.length}} 条数据</div>
   </ng-template>
 </div>

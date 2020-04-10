@@ -42,7 +42,7 @@ export class TestDirective implements OnInit, OnChanges {
       text-align: right;
       margin-top: -1px;
     `;
-    const ptest = document.querySelector('div');
+    const ptest = document.querySelector('table');
     ptest.insertAdjacentElement('afterend', hostEle);
     return hostEle;
   }
