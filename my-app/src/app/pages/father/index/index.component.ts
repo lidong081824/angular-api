@@ -8,12 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IndexComponent implements OnInit {
 
+  list = [];
+
   constructor(
     private aaa: TestDirective
   ) { }
 
   ngOnInit(): void {
     console.log(this.aaa.appTest);
+  }
+
+  add() {
+    this.list.push({ name: '小明' });
   }
 
 }

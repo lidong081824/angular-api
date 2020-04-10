@@ -1,5 +1,15 @@
-<p [appTest]="hello">ceshi 类容
-  <ng-template #hello>
-    <div>111</div>
+<button (click)="add()">新增</button>
+<div [appTest]="test">
+  <ng-template #test>
+    <div *ngIf="!list || list.length<=0">为空</div>
+    <div *ngIf="list && list.length>0">
+      <p *ngFor="let item of list">{{item.name}}</p>
+    </div>
   </ng-template>
-</p>
+</div>
+
+<div [appTest]="test2">
+  <ng-template #test2>
+    <div>34</div>
+  </ng-template>
+</div>
