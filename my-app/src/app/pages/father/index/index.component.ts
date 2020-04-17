@@ -1,4 +1,3 @@
-import { TestDirective } from 'app/core/directive/test.directive';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,12 +9,9 @@ export class IndexComponent implements OnInit {
 
   list = [];
 
-  constructor(
-    private aaa: TestDirective
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
-    console.log(this.aaa.appTest);
   }
 
   add() {

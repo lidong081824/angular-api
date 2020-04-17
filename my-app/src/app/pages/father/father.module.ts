@@ -1,3 +1,4 @@
+import { InputbgDirective } from './../../core/directive/inputbg.directive';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,11 +8,11 @@ import { TestDirective } from 'app/core/directive/test.directive';
 
 
 @NgModule({
-  declarations: [IndexComponent, TestDirective],
+  declarations: [IndexComponent, TestDirective, InputbgDirective],
   imports: [
     CommonModule,
     FatherRoutingModule,
   ],
-  providers: [TestDirective]
+  providers: [TestDirective, InputbgDirective]
 })
 export class FatherModule { }
