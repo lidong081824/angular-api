@@ -23,7 +23,7 @@ const routes: Routes = [
     path: 'hello', component: HelloComponent
   },
   {
-    path: '', redirectTo: 'hello', pathMatch: 'full'
+    path: '', redirectTo: 'persion', pathMatch: 'full'
   },
   {
     path: '**', component: EmptyComponent,
